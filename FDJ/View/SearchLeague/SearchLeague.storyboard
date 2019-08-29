@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search League View Controller-->
+        <scene sceneID="DnL-4N-dBW">
+            <objects>
+                <viewController storyboardIdentifier="SearchLeague" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qtt-6d-MQX" customClass="searchLeagueViewController" customModule="FDJ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rV0-31-cZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search by league" translatesAutoresizingMaskIntoConstraints="NO" id="aQQ-oo-oTe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="zgI-sQ-6Hd"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7T6-Do-J2I">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="k4p-n6-gmM">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LeagueCollectionViewCell" id="6cD-t6-9xs" customClass="LeagueCollectionViewCell" customModule="FDJ" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qtt-6d-MQX" id="KZ0-jz-5gZ"/>
+                                    <outlet property="delegate" destination="Qtt-6d-MQX" id="fU0-ri-25B"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7T6-Do-J2I" firstAttribute="leading" secondItem="vfE-MF-q0C" secondAttribute="leading" id="MIE-Wd-IOR"/>
+                            <constraint firstItem="aQQ-oo-oTe" firstAttribute="top" secondItem="vfE-MF-q0C" secondAttribute="top" id="Rf3-1V-JkH"/>
+                            <constraint firstItem="aQQ-oo-oTe" firstAttribute="trailing" secondItem="vfE-MF-q0C" secondAttribute="trailing" id="aCD-Wa-Ay1"/>
+                            <constraint firstItem="7T6-Do-J2I" firstAttribute="top" secondItem="vfE-MF-q0C" secondAttribute="top" constant="44" id="cFS-XA-Fom"/>
+                            <constraint firstItem="7T6-Do-J2I" firstAttribute="bottom" secondItem="vfE-MF-q0C" secondAttribute="bottom" id="fIK-LP-p6i"/>
+                            <constraint firstItem="aQQ-oo-oTe" firstAttribute="leading" secondItem="vfE-MF-q0C" secondAttribute="leading" id="pZ0-hx-SbL"/>
+                            <constraint firstItem="7T6-Do-J2I" firstAttribute="trailing" secondItem="vfE-MF-q0C" secondAttribute="trailing" id="rSv-3Q-hR0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vfE-MF-q0C"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qg5-Zx-nmK"/>
+                    <connections>
+                        <outlet property="collectionView" destination="7T6-Do-J2I" id="aGt-VQ-wxG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ryN-nS-f3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318.84057971014494" y="-221.65178571428569"/>
+        </scene>
+    </scenes>
+</document>
