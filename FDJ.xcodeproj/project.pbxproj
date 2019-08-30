@@ -17,9 +17,12 @@
 		8BE514B62315F93600381221 /* SearchLeague.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE514B52315F93600381221 /* SearchLeague.storyboard */; };
 		8BE514B92315F96A00381221 /* SearchLeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE514B82315F96A00381221 /* SearchLeagueViewController.swift */; };
 		8BE514BC2315FD1F00381221 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE514BB2315FD1F00381221 /* PlayerModel.swift */; };
+		DAEECBB7A3093AD0A3FCDD2A /* Pods_FDJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7516A13F0C4867201B2B0D /* Pods_FDJ.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E674A222FA915AEB0B878A3 /* Pods-FDJ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDJ.release.xcconfig"; path = "Target Support Files/Pods-FDJ/Pods-FDJ.release.xcconfig"; sourceTree = "<group>"; };
+		3F7516A13F0C4867201B2B0D /* Pods_FDJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FDJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B490C3F231738340033BC56 /* LeagueCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCollectionViewCell.swift; sourceTree = "<group>"; };
 		8B490C40231738340033BC56 /* LeagueCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeagueCollectionViewCell.xib; sourceTree = "<group>"; };
 		8B490C43231739A80033BC56 /* CellLeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellLeagueModel.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		8BE514B52315F93600381221 /* SearchLeague.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchLeague.storyboard; sourceTree = "<group>"; };
 		8BE514B82315F96A00381221 /* SearchLeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLeagueViewController.swift; sourceTree = "<group>"; };
 		8BE514BB2315FD1F00381221 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		F74F26D84C1F148D632CE406 /* Pods-FDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDJ.debug.xcconfig"; path = "Target Support Files/Pods-FDJ/Pods-FDJ.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +43,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEECBB7A3093AD0A3FCDD2A /* Pods_FDJ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30551A92B61C8D7439080771 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F74F26D84C1F148D632CE406 /* Pods-FDJ.debug.xcconfig */,
+				1E674A222FA915AEB0B878A3 /* Pods-FDJ.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8B490C3E231737EA0033BC56 /* CellLeague */ = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +74,8 @@
 			children = (
 				8BE5149F2315F84800381221 /* FDJ */,
 				8BE5149E2315F84800381221 /* Products */,
+				30551A92B61C8D7439080771 /* Pods */,
+				CBE6DEA604CDBAC7E35B1BF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +136,14 @@
 			path = SearchLeague;
 			sourceTree = "<group>";
 		};
+		CBE6DEA604CDBAC7E35B1BF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F7516A13F0C4867201B2B0D /* Pods_FDJ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BE514AF2315F84900381221 /* Build configuration list for PBXNativeTarget "FDJ" */;
 			buildPhases = (
+				7C9C19EA8E1C24D88E8C7706 /* [CP] Check Pods Manifest.lock */,
 				8BE514992315F84800381221 /* Sources */,
 				8BE5149A2315F84800381221 /* Frameworks */,
 				8BE5149B2315F84800381221 /* Resources */,
+				8DB999CDEDBFA5EFAFA2A44B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,6 +213,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C9C19EA8E1C24D88E8C7706 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FDJ-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DB999CDEDBFA5EFAFA2A44B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FDJ/Pods-FDJ-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FDJ/Pods-FDJ-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FDJ/Pods-FDJ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BE514992315F84800381221 /* Sources */ = {
@@ -340,6 +409,7 @@
 		};
 		8BE514B02315F84900381221 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F74F26D84C1F148D632CE406 /* Pods-FDJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -358,6 +428,7 @@
 		};
 		8BE514B12315F84900381221 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E674A222FA915AEB0B878A3 /* Pods-FDJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
